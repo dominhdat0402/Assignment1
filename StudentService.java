@@ -24,27 +24,11 @@ public class StudentService {
     }
 
     public void searchByName(String keyword) {
-        boolean found = false;
-        for (Student s : students) {
-            if (s.getFullName().toLowerCase().contains(keyword.toLowerCase())) {
-                System.out.println(s);
-                found = true;
-            }
-        }
-        if (!found) {
-            System.out.println("No student found.");
-        }
+    
     }
 
     public void displayAll() {
-        if (students.isEmpty()) {
-            System.out.println("No students to display.");
-        } else {
-            System.out.println("ID        Name                  GPA");
-            for (Student s : students) {
-                System.out.println(s);
-            }
-        }
+     
     }
 
     private boolean isDuplicateId(int id) {
