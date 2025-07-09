@@ -52,9 +52,7 @@ public class Main {
                 case 4:
                     service.displayAll();
                     break;
-                case 5:
-                    System.out.println("Goodbye!");
-                    break;
+                
                 default:
                     System.out.println("Invalid choice.");
             }
